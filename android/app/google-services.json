@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "991824432041",
+    "project_id": "saat-79a41",
+    "storage_bucket": "saat-79a41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991824432041:android:3c7623dc1f41ef057d12b8",
+        "android_client_info": {
+          "package_name": "com.example.saat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991824432041-p6k893s7ejv0uc628tn64e0kaagmhvno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5PTGV4V4QFHMWcik3C4seRhs0avSfLCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991824432041-p6k893s7ejv0uc628tn64e0kaagmhvno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
