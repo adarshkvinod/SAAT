@@ -2,6 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:saat/config/color.dart';
+import 'package:saat/screen/splash_screen.dart';
+
 
 import 'firebase_options.dart';
 
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: const Sample(),
+       home: const SplashScreen(),
       theme: ThemeData(
           scaffoldBackgroundColor:white,
           appBarTheme: const AppBarTheme(
