@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
        home: const SplashScreen(),
+       
       theme: ThemeData(
           scaffoldBackgroundColor:white,
           appBarTheme: const AppBarTheme(
