@@ -37,7 +37,6 @@ dependencies:
   cupertino_icons: ^1.0.2
   get: ^4.6.5
   jumping_dot: ^0.0.6
-  
   curved_navigation_bar: ^1.0.3
   firebase_core: ^2.10.0
 
@@ -68,6 +67,7 @@ flutter:
      - assets/images/SaatName.png
      - assets/images/google_icon.png
      - assets/images/SaatLogo.png
+     - assets/images/adarsh.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

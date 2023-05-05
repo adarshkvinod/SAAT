@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:saat/config/color.dart';
 import 'package:saat/screen/home_page.dart';
-import 'package:saat/screen/login_page.dart';
-import 'package:saat/screen/signup_page.dart';
 import 'package:saat/screen/splash_screen.dart';
 
 import 'firebase_options.dart';
@@ -24,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      home: const HomePage(),
       theme: ThemeData(
         scaffoldBackgroundColor: white,
         appBarTheme: const AppBarTheme(
@@ -35,7 +33,7 @@ class MyApp extends StatelessWidget {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
-              textStyle: TextStyle(
+              textStyle: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold
               ),
