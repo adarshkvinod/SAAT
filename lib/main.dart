@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:saat/config/color.dart';
+import 'package:saat/screen/chat_screen.dart';
 import 'package:saat/screen/home_page.dart';
 import 'package:saat/screen/splash_screen.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const ChatScreen(),
       theme: ThemeData(
         scaffoldBackgroundColor: white,
         appBarTheme: const AppBarTheme(

@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:saat/config/color.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
@@ -25,15 +27,29 @@ class _ChatScreenState extends State<ChatScreen> {
              const SizedBox(width: 3),
             
             IconButton(onPressed: (){}, icon: const Icon(Icons.more_vert)),
+           
           ],
          ),
        ),
 
       ),
      
-      body: Column(
-        
-      ),
-    );
+      body:Column(children: const [
+         Padding(
+         padding: EdgeInsets.all(20.0),
+         child: CupertinoSearchTextField(
+          backgroundColor:purewhite,
+                  autocorrect: true,
+         ),
+    
+         
+         
+       ),
+      ],) 
+      
+      
+       
+      );
+  
   }
 }
