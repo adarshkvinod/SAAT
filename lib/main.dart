@@ -4,6 +4,9 @@ import 'package:get/get.dart';
 import 'package:saat/config/color.dart';
 import 'package:saat/screen/chat_screen.dart';
 import 'package:saat/screen/home_page.dart';
+import 'package:saat/screen/password_reset.dart';
+import 'package:saat/screen/profile_pic.dart';
+import 'package:saat/screen/recovery_password.dart';
 import 'package:saat/screen/splash_screen.dart';
 
 import 'firebase_options.dart';
@@ -23,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const ChatScreen(),
+      home: const PasswordReset(),
       theme: ThemeData(
         scaffoldBackgroundColor: white,
         appBarTheme: const AppBarTheme(
