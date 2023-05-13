@@ -31,7 +31,7 @@ class _ProfilePictureState extends State<ProfilePicture> {
             const SizedBox(height: 30,),
             Row(mainAxisAlignment: MainAxisAlignment.center,
               children: const [
-                Text("Add profile photo",style: TextStyle(fontSize: 25,color: blue3),),
+                Text("Add profile photo",style: TextStyle(fontSize: 30,color: blue3,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),),
                 
               ],
             ),
@@ -41,7 +41,7 @@ class _ProfilePictureState extends State<ProfilePicture> {
          Image.asset('assets/images/add_profilepic.png',width: 200,height: 200,),
          const SizedBox(height: 210),
          ElevatedButton(onPressed: (){}, child:const Text("Add photo")),
-         TextButton(onPressed: (){}, child: const Text("skip",style: TextStyle(fontSize: 20),))
+         TextButton(onPressed: (){}, child: const Text("skip",style: TextStyle(fontSize: 18),))
           ],
         ),
       ),
