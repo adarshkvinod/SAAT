@@ -36,8 +36,12 @@ class _ProfilePictureState extends State<ProfilePicture> {
               ],
             ),
             const SizedBox(height: 12,),
-            const Text("Add a profile photo so that your friends know it's you."),
-           
+            const Text("Add a profile photo so that your friends know it's you.",style: TextStyle(color: black,fontWeight: FontWeight.bold),),
+            const SizedBox(height: 100,),
+         Image.asset('assets/images/add_profilepic.png',width: 200,height: 200,),
+         const SizedBox(height: 210),
+         ElevatedButton(onPressed: (){}, child:const Text("Add photo")),
+         TextButton(onPressed: (){}, child: const Text("skip",style: TextStyle(fontSize: 20),))
           ],
         ),
       ),

@@ -68,6 +68,7 @@ flutter:
      - assets/images/google_icon.png
      - assets/images/SaatLogo.png
      - assets/images/adarsh.jpg
+     - assets/images/add_profilepic.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
