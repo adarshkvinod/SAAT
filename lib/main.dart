@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const ProfilePicture(),
+      home: const HomePage(),
       theme: ThemeData(
         scaffoldBackgroundColor: white,
         appBarTheme: const AppBarTheme(

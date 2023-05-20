@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:saat/config/color.dart';
 
@@ -49,7 +50,7 @@ class _HomePageState extends State<HomePage> {
                       image: DecorationImage(
                           image: AssetImage(
                               "assets/images/adarsh.jpg")), //fetch the user's profile picture here.
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                      borderRadius: BorderRadius.all(Radius.circular(20))),
                   height: 55.0,
                   width: 55.0,
                 ),
@@ -64,10 +65,36 @@ class _HomePageState extends State<HomePage> {
                   ),
                 )
               ],
-            )
+            ),
+            SizedBox(height: 30,),
+           SingleChildScrollView(scrollDirection: Axis.horizontal,
+             child: Row(
+               children: const [
+                 CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/images/DemoImage1.jpeg'),),
+                 SizedBox(width: 20,),
+               CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/images/DemoImage2.jpg'),),
+              SizedBox(width: 20,),
+               CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/images/DemoImage3.jpg'),),
+              SizedBox(width: 20,),
+               CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/images/DemoImage1.jpeg'),),
+               SizedBox(width: 20,),
+               CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/images/DemoImage2.jpg'),),
+               SizedBox(width: 20,),
+               CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/images/DemoImage2.jpg'),),
+              SizedBox(width: 20,),
+               CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/images/DemoImage3.jpg'),),
+              SizedBox(width: 20,),
+               CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/images/DemoImage1.jpeg'),),
+               SizedBox(width: 20,),
+               CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/images/DemoImage2.jpg'),),
+               ],
+             ),
+           ),
+           SizedBox(height: 20,),
+           
           ]),
         ),
-      ),
+        ),
     );
   }
 }
