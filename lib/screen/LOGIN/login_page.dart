@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:saat/config/color.dart';
 import 'package:saat/main.dart';
+import 'package:saat/screen/LOGIN/recovery_password.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -13,20 +14,25 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     return Scaffold(
+      appBar: AppBar(),
         body: Padding(
       padding: const EdgeInsets.all(20.0),
       child: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(
-              height: 50,
-              width: 50,
+            SizedBox(
+               width: width*0.28,
+                height: height*0.14,
+              child: Image.asset(
+                'assets/images/SaatLogo.png',
+               fit: BoxFit.fill,
+              ),
             ),
-            Image.asset(
-              'assets/images/SaatLogo.png',
-              width: 300,
-              height: 250,
+            const SizedBox(
+              height: 40.0,
             ),
             const Text(
               "Hello again!",
@@ -64,14 +70,16 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 TextButton(
-                    onPressed: () {}, child: const Text("recover password")),
+                    onPressed: () {
+                      Navigator.push(context,MaterialPageRoute(builder: (context) =>const RecoveryPassword()));
+                    }, child: const Text("recover password")),
               ],
             ),
             const ElevatedButton(
                 onPressed: main,
                 child: Text(
                   'Login',
-                )),
+                ),),
             const SizedBox(height: 20),
             ElevatedButton(
                 onPressed: () {},

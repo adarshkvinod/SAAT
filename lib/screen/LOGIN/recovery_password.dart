@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:saat/config/color.dart';
 
 class RecoveryPassword extends StatefulWidget {
@@ -16,13 +15,10 @@ class _RecoveryPasswordState extends State<RecoveryPassword> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          centerTitle: true,
-          title: SingleChildScrollView(
-            child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-              IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back_ios_rounded)),
-            
-            ]),
-          ),
+          leading:  IconButton(onPressed: () {
+              Navigator.pop(context);
+            }, icon: const Icon(Icons.arrow_back_ios_rounded),),
+          automaticallyImplyLeading: false,
         ),
         
         body:
