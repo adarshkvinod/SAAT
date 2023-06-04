@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:saat/config/color.dart';
 import 'package:saat/screen/HOME/homepage_provider.dart';
-import 'package:saat/screen/LOGIN/login_page.dart';
-import 'package:saat/screen/chat_screen.dart';
 import 'package:saat/screen/HOME/home_page.dart';
+import 'package:saat/screen/LOGIN/login_page_provider.dart';
 import 'services/firebase_options.dart';
 
 void main() async {
@@ -23,7 +22,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider<HomePageProvider>(create: (context) => HomePageProvider())
+        ChangeNotifierProvider<HomePageProvider>(create: (context) => HomePageProvider(),),
+        ChangeNotifierProvider<LoginPageProvider>(create: (context) => LoginPageProvider(),),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
