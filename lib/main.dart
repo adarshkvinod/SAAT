@@ -2,9 +2,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:saat/config/color.dart';
+import 'package:saat/screen/CHAT/chat_screen.dart';
 import 'package:saat/screen/HOME/homepage_provider.dart';
-import 'package:saat/screen/LOGIN/login_page.dart';
-import 'package:saat/screen/chat_screen.dart';
+import 'package:saat/LOGIN/login_page.dart';
+
+import 'package:saat/screen/CHAT/chat_list_screen.dart';
 import 'package:saat/screen/HOME/home_page.dart';
 import 'services/firebase_options.dart';
 
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: const HomePage(), // Home screen
+        home: const ChatViewScreen(), // Home screen
         theme: ThemeData(
           scaffoldBackgroundColor: white,
           appBarTheme: const AppBarTheme(

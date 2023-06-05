@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:saat/config/color.dart';
 import 'package:saat/main.dart';
-import 'package:saat/screen/LOGIN/recovery_password.dart';
+import 'package:saat/LOGIN/recovery_password.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

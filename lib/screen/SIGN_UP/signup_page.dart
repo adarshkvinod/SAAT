@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:saat/config/color.dart';
-import 'package:saat/screen/LOGIN/login_page.dart';
+import 'package:saat/LOGIN/login_page.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});

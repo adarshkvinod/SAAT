@@ -4,6 +4,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:saat/config/color.dart';
+import 'package:saat/screen/HOME/feed_design.dart';
 import 'package:saat/screen/HOME/homepage_provider.dart';
 
 
@@ -160,35 +161,41 @@ class _HomePageState extends State<HomePage> {
                   children:[
                     SizedBox(
                     width: width*0.9,
-                    height: height*0.3,
-                    child: const Padding(
-                      padding:  EdgeInsets.all(15.0),
-                      child:  Card(
-                        elevation: 10.0,
-                        child: Column(
-                          children: [
-                            
-                           
-                            
-                          ],
-                        ),
-                      ),
+                    height: height*0.5,
+                    child:  Card(
+                      elevation: 10.0,
+                      child: Image.asset('assets/images/DemoImage3.jpg',height: 40,),
+                    
                     ),
                   ),
                    Positioned(
-                              left: 20,
-                              top: -20,
+                              left: 10,
+                              top: 7,
+                              
                               child: CircleAvatar(
-                                radius: 30,
-                                                    
+                                radius: 22,
+                                 backgroundImage: AssetImage('assets/images/DemoImage2.jpg'),                   
                                                       ),
                             ),
+                            Positioned(
+                              left: 70,
+                              top: -5,
+                              
+                              child:TextButton(onPressed: 
+                              (){}, child: const Text('the_adrz',style: TextStyle(color: Colors.black),)),
+                              
+                            ),
+                             
+                            
                   ] 
                 );
                }, separatorBuilder: (context, _){
                 return const SizedBox(height: 20,);
                }, itemCount: 10),
-             )
+             
+             ),
+            
+            
             ]),
           ),
           );
